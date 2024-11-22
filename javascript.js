@@ -1,8 +1,8 @@
 //question 1 
 
-for (let i = 1; i<=5; i++)
-{
-    console.log("Harry", "Hermoine", "Ron", "Draco", "Luna")
+let characters = ['Harry', 'Hermoine', 'Ron', 'Draco', 'Luna'];
+for (let i = 1; 1 < characters.length; i++){
+    console.log("Character;", characters[i]);
 }
 
 //question 2
@@ -15,14 +15,16 @@ let greeting = `Welcome, ${firstName} of ${house} !`;
 
 //question 3
 let characterName= "Hermoine";
-console.log(characterName);
+
+console.log(characterName.toUpperCase());
+console.log(charactername.toLowerCase());
 
 //question 4
 let spell = "Expelliarmus";
 console.log(spell);
 
-let str1 = " Hello, JavaScript! ";
-console.log("${str1.trim()}");
+let trimmedspell = spell.trim();
+console.log(spell.trim());
 
 
 
@@ -36,7 +38,7 @@ console.log(slicedquote);
 //question 6
 let firstname = "Ron";
 let lastname = "Weasley";
-let combined = firstname.concat(", ", lastname, "!");
+let combined = firstname.concat('', lastname, "!");
 console.log(combined);
 
 //question 7
@@ -70,7 +72,7 @@ console.log(firstElement);
 let professors = ['Dumbledore', 'McGonagall', 'Snape', 'Hagrid']
 console.log(professors);
 
-let slicedProfessors = professors.slice(2, 3);
+let slicedProfessors = professors.slice(1, 3);
 console.log(slicedProfessors);
 
 //question 11
@@ -81,6 +83,9 @@ students.splice(1, 2);
 console.log(students);
 
 //question 12
+let phrase = 'Mischief Managed';
+let result = phrase.trim().toLowerCase().concat('- harry');
+console.log(result);
 
 //question 13
 let wizards = ['Harry', 'Hermione', 'Ron']
@@ -93,5 +98,5 @@ console.log(wizards);
 let message = 'Welcome to Hogwarts School of Witchcraft and Wizardry';
 console.log(message);
 
-let slicedmessage = message.slice (4,5);
+let slicedmessage = message.slice(10,22).concat('Castle');
 console.log(slicedmessage);
